@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.signup-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.full-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .half {
+    width: 100vw;
+  }
+}
