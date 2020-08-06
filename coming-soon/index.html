@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>We will be here soon...</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <style>
+      .bg-hero {
+        background-image: url("./images/hero.jpg");
+      }
+
+      .is-rounded {
+      }
+
+      .hero-container {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero is-fullheight is-fullwidth bg-hero">
+      <div class="hero-head">
+        <nav class="navbar has-background-white">
+          <div class="navbar-brand">
+            <a href="./" class="navbar-item">Site UI</a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <ul class="navbar-end">
+              <li class="navbar-item">
+                <a href="#" class="navbar-link is-arrowless">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link is-arrowless">About</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link is-arrowless">Contact</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link is-arrowless">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <section class="container has-text-centered hero-container px-5 py-5">
+          <h1 class="title is-size-1">Coming Soon</h1>
+          <p class="subtitle my-2 is-size-4">
+            We will be here soon, for now please provide us your email, <br />
+            we will notify you once we complete it for you.
+          </p>
+
+          <form>
+            <div class="field has-addons my-4">
+              <div class="control is-expanded">
+                <input
+                  type="email"
+                  autofocus
+                  placeholder="Enter your email"
+                  class="input is-info is-fullwidth"
+                />
+              </div>
+              <div class="control">
+                <button class="button is-info mx-4" type="submit">
+                  Notify Me
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".navbar-burger").onclick = () => {
+          document.querySelector(".navbar-menu").classList.toggle("is-active");
+        };
+      });
+    </script>
+  </body>
+</html>
