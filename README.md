@@ -10,14 +10,20 @@
 
 | Gaming | [https://devjayantmalik.github.io/ui-projects/gaming/](https://devjayantmalik.github.io/ui-projects/gaming/) |
 
+| Bootstrap Components | [https://devjayantmalik.github.io/ui-projects/bootstrap-components/](https://devjayantmalik.github.io/ui-projects/bootstrap-components/) |
+
 ## Coming Soon
 
-![coming soon website ui](./screenshots/coming-soon.png)
+![coming soon website ui](./screenshots/coming-soon.jpg)
 
 ## Signup
 
-![signup website ui](./screenshots/signup.png)
+![signup website ui](./screenshots/signup.jpg)
 
 ## Gaming
 
-![gaming website ui](./screenshots/gaming.png)
+![gaming website ui](./screenshots/gaming.jpg)
+
+## Bootstrap Components
+
+![bootstrap components page](./screenshots/bootstrap-components.jpg)
