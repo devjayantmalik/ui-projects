@@ -27,3 +27,7 @@
 ## Bootstrap Components
 
 ![bootstrap components page](./screenshots/bootstrap-components.jpg)
+
+## Mail Reminder
+
+![mail reminder notification sender page](./screenshots/mail-reminder.jpg)
