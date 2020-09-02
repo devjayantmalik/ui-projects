@@ -1,0 +1,166 @@
+/*main side bar*/
+.sidebar {
+  width: 200px;
+  background-color: #f5f7f9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 100%;
+  z-index: 1;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar header {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6 {
+  font-size: large;
+  padding: 20px;
+}
+
+.menu {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #5f5f5f;
+  background-color: #f5f7f9;
+}
+
+.menu li a .glyphicon,
+.menu li a .fa {
+  margin-right: 8px;
+}
+
+.menu li a:hover,
+.menu li a {
+  text-decoration: none;
+}
+
+.sidebar .nb {
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* other utilities */
+.icon {
+  margin-right: 5px;
+}
+
+.sidebar-toggler {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.no-margin {
+  margin-left: 0px !important;
+}
+
+/* use with your main navbar */
+.sidebar-navbar,
+.sidebar-main {
+  margin-left: 200px;
+  -moz-animation: slidein 300ms forwards;
+  -o-animation: slidein 300ms forwards;
+  -webkit-animation: slidein 300ms forwards;
+  animation: slidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* animations */
+
+.sidebar,
+.sidebar-navbar {
+  -moz-animation: slidein 300ms forwards;
+  -o-animation: slidein 300ms forwards;
+  -webkit-animation: slidein 300ms forwards;
+  animation: slidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.sidebar-main {
+  -moz-animation: bodyslidein 300ms forwards;
+  -o-animation: bodyslidein 300ms forwards;
+  -webkit-animation: bodyslidein 300ms forwards;
+  animation: bodyslidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* Slide in animation */
+@-moz-keyframes slidein {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    margin-left: 200px;
+  }
+}
+@-webkit-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes bodyslidein {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 200px;
+  }
+}
