@@ -1,0 +1,39 @@
+.tabs-menu {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.tabs-menu > li {
+  border: 2px solid black;
+  margin: 0 10px;
+  padding: 10px;
+  display: block;
+}
+
+.tabs-menu > li:first-of-type,
+.tabs-menu > li:last-of-type {
+  margin: 0;
+}
+
+.tabs-content > * {
+  display: none;
+  margin: 10px 0;
+  padding: 20px;
+  border: 2px solid indianred;
+}
+
+.tabs-content > *:first-of-type {
+  margin: 0;
+}
+
+.active {
+  background-color: aquamarine;
+}
+
+.visible {
+  display: block;
+}
