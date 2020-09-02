@@ -1,0 +1,17 @@
+/* dark theme */
+:root {
+  /* heading sizes */
+  --font-size-h1: 2.5em;
+  --font-size-h2: 2em;
+  --font-size-h3: 1.8em;
+  --font-size-h4: 1.4em;
+  --font-size-h5: 1em;
+  --font-size-h6: 0.8em;
+
+  /* border colors */
+  --heading-bottom-border-color: indianred;
+
+  /* background colors */
+  --body-background: #343a40;
+  --body-text-color: white;
+}
