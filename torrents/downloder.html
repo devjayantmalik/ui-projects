@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloader</title>
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <style>
+      #speed {
+        font-weight: bold;
+      }
+
+      .h1 {
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid indianred;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <div class="navbar-item">Brand</div>
+
+          <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="navbar-menu">
+          <ul class="navbar-end">
+            <li class="navbar-item">
+              <a
+                href="#"
+                onclick="toggleAddTorrentModal()"
+                class="navbar-link is-arrowless"
+                >New Torrent</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link is-arrowless">Downloads</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link is-arrowless">Account</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="message is-danger">
+      <p class="message-body">Something went wrong.</p>
+    </div>
+
+    <div class="message is-success">
+      <p class="message-body">Torrent added successfully.</p>
+    </div>
+
+    <main class="container">
+      <section class="section">
+        <h2 class="title h1">Active Torrents</h2>
+
+        <div class="container py-4 my-4">
+          <div class="level box">
+            <div class="level-left">
+              <div class="level-item">
+                <div>
+                  <h2 class="title is-5">ubuntu-15.04-desktop-amd64.iso</h2>
+                  <div>50% Downloaded</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <div>
+                  <p>
+                    <span id="progress">300 MB / 1.2 GB</span> -
+                    <span id="percent">20%</span> -
+                    <span id="speed">19.3 MB/s</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block ends here-->
+
+          <div class="level box">
+            <div class="level-left">
+              <div class="level-item">
+                <div>
+                  <h2 class="title is-5">ubuntu-15.04-desktop-amd64.iso</h2>
+                  <div>50% Downloaded</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <div>
+                  <p>
+                    <span id="progress">300 MB / 1.2 GB</span> -
+                    <span id="percent">20%</span> -
+                    <span id="speed">19.3 MB/s</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block ends here-->
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="title h1">Completed Torrents</h2>
+
+        <div class="container py-4 my-4">
+          <div class="level box">
+            <div class="level-left">
+              <div class="level-item">
+                <div>
+                  <h2 class="title is-5">ubuntu-15.04-desktop-amd64.iso</h2>
+                  <div>Download Complete</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <div>
+                  <button class="button is-link">Start Upload</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block ends here-->
+          <div class="level box">
+            <div class="level-left">
+              <div class="level-item">
+                <div>
+                  <h2 class="title is-5">ubuntu-15.04-desktop-amd64.iso</h2>
+                  <div>Download Complete</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <div>
+                  <button class="button is-link">Start Upload</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block ends here-->
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="add-torrent">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <section class="box has-background-light">
+          <form action="#">
+            <div class="field">
+              <label for="file_url" class="label">Enter Torrent URL</label>
+              <input class="input" id="file_url" name="file_url" type="text" />
+            </div>
+
+            <div class="field">
+              <button class="button is-fullwidth is-link">Add now</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <button
+        onclick="toggleAddTorrentModal()"
+        class="modal-close is-large"
+        aria-label="close"
+      ></button>
+    </div>
+
+    <script>
+      function toggleAddTorrentModal() {
+        document.querySelector("#add-torrent").classList.toggle("is-active");
+      }
+    </script>
+  </body>
+</html>

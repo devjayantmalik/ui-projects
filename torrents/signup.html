@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <style>
+      body {
+        background-color: #eee;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .login-box {
+        width: 80%;
+        margin: auto;
+      }
+
+      .h1 {
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid indianred;
+        font-weight: bold;
+      }
+
+      @media screen and (min-width: 900px) {
+        .login-box {
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero is-fullwidth is-fullheight">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">Brand</a>
+
+              <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="navbar-menu">
+              <ul class="navbar-end">
+                <li class="navbar-item">
+                  <a href="./login.html" class="navbar-link is-arrowless"
+                    >Login</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="./signup.html" class="navbar-link is-arrowless"
+                    >Signup</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="hero-body">
+          <div class="box login-box">
+            <form action="#">
+              <div class="columns mb-0">
+                <div class="column">
+                  <div class="field">
+                    <label class="label" for="fname">Your First Name</label>
+                    <input
+                      name="fname"
+                      id="fname"
+                      required
+                      class="input is-info"
+                      type="text"
+                      placeholder="E.g. John"
+                    />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="field">
+                    <label class="label" for="lname">Your Last Name</label>
+                    <input
+                      name="lname"
+                      id="lname"
+                      required
+                      class="input is-info"
+                      type="text"
+                      placeholder="E.g. Doe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="email">Your Email Address</label>
+                <input
+                  name="email"
+                  id="email"
+                  required
+                  class="input is-info"
+                  type="email"
+                  placeholder="E.g. username@gmail.com"
+                />
+              </div>
+              <div class="field">
+                <label class="label" for="password">Your Password</label>
+                <input
+                  name="password"
+                  id="password"
+                  required
+                  class="input is-info"
+                  type="password"
+                  placeholder="Your Account password"
+                />
+              </div>
+
+              <div class="field">
+                <button class="button is-fullwidth is-info">
+                  Create Account
+                </button>
+              </div>
+
+              <div class="field">
+                <div class="columns">
+                  <div class="column">
+                    <a href="./login.html">Already have an account?</a>
+                  </div>
+                  <div class="column has-text-right">
+                    <a href="./login.html">Forgot your password?</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
