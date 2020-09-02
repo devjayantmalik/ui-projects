@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!!!</title>
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <link rel="stylesheet" href="./icons/themify-icons.css" />
+    <style>
+      .hero-body {
+        align-items: flex-start !important;
+        padding: 0px;
+      }
+
+      .table {
+        width: 100%;
+        margin-top: 3.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- sidebar -->
+    <aside></aside>
+
+    <!-- site content -->
+    <main>
+      <div class="hero is-fullheight is-fullwidth">
+        <header class="hero-head">
+          <div class="navbar is-light is-fixed-top has-background-light">
+            <div class="navbar-brand">
+              <a href="./" class="navbar-item">
+                <img
+                  src="./images/logo.svg"
+                  height="40"
+                  width="40"
+                  alt="site logo"
+                />
+              </a>
+
+              <div class="navbar-burger burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <nav class="navbar-menu">
+              <ul class="navbar-end">
+                <li class="navbar-item">
+                  <a
+                    href="#"
+                    onclick="showModal('upload')"
+                    class="navbar-link is-arrowless"
+                  >
+                    <span class="ti-upload mr-2"></span>
+                    <span>Upload</span>
+                  </a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="./" class="navbar-link is-arrowless">
+                    <span class="ti-briefcase mr-2"></span>
+                    <span>File Manager</span>
+                  </a>
+                </li>
+
+                <li class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link"
+                    ><span class="ti-user mr-2"></span> Account</a
+                  >
+
+                  <div class="navbar-dropdown">
+                    <a href="./index.html" class="navbar-item">Dashboard</a>
+                    <a href="./profile.html" class="navbar-item">Profile</a>
+                    <a href="#" class="navbar-item">Logout</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <section class="hero-body is-fullheight">
+          <div class="container is-fluid px-0">
+            <table class="table is-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Filename</th>
+                  <th>Size</th>
+                  <th>Actions</th>
+                  <th>State</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="ti-folder is-size-4"></span></td>
+                  <td>
+                    <a href="#">
+                      Punjabi Collection
+                    </a>
+                  </td>
+                  <td>2 GB</td>
+                  <td>
+                    <button class="button is-link">
+                      <span class="ti-download"></span>
+                    </button>
+                    <button class="button is-danger">
+                      <span class="ti-trash"></span>
+                    </button>
+                  </td>
+                  <td>
+                    Downloaded
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="ti-file is-size-4"></span></td>
+                  <td>
+                    Gurdas Maan - Punjab Song - Jatinder Shah - Gurickk G Maan -
+                    New Punjabi Song - Saga Music.webm
+                  </td>
+                  <td>2 MB</td>
+                  <td>
+                    <button
+                      onclick="showModal('player')"
+                      class="button is-info"
+                    >
+                      <span class="ti-control-play"></span>
+                    </button>
+                    <button class="button is-link">
+                      <span class="ti-download"></span>
+                    </button>
+                    <button class="button is-danger">
+                      <span class="ti-trash"></span>
+                    </button>
+                  </td>
+                  <td>
+                    Downloaded
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="ti-file is-size-4"></span></td>
+                  <td>
+                    Gurdas Maan - Punjab Song - Jatinder Shah - Gurickk G Maan -
+                    New Punjabi Song - Saga Music.webm
+                  </td>
+                  <td>2 MB</td>
+                  <td>
+                    <button class="button is-info">
+                      <span class="ti-control-play"></span>
+                    </button>
+                    <button class="button is-link">
+                      <span class="ti-download"></span>
+                    </button>
+                    <button class="button is-danger">
+                      <span class="ti-trash"></span>
+                    </button>
+                  </td>
+                  <td>
+                    10%
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <footer class="hero-foot content footer py-1 has-background-dark">
+          <p class="has-text-white has-text-centered">
+            Developed by: Jayant Malik
+          </p>
+        </footer>
+      </div>
+    </main>
+
+    <!-- modals here -->
+    <!-- set is active class to show the modal -->
+    <div class="modal" id="player">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <article class="card">
+          <div class="card-img">
+            <video controls src="./videos/video.mp4" alt="" />
+          </div>
+        </article>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div class="modal" id="upload">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <article class="card has-background-warning">
+          <div class="card-content">
+            <form>
+              <div class="control">
+                <label for="magnet" class="label">Magnet URL</label>
+                <input type="text" class="input" />
+              </div>
+
+              <div class="title has-text-centered my-4 has-text-primary">
+                OR
+              </div>
+
+              <div class="control">
+                <div
+                  class="file has-name is-boxed is-fullwidth has-text-centered"
+                >
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume" />
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                    <span class="file-name">
+                      Screen Shot 2017-07-29 at 15.54.25.png
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+      // handle closing of modal
+      document.querySelectorAll(".modal-close").forEach((modal) => {
+        modal.onclick = () => {
+          modal.parentElement.classList.toggle("is-active");
+        };
+      });
+
+      function showModal(id) {
+        document.getElementById(id).classList.toggle("is-active");
+      }
+    </script>
+  </body>
+</html>

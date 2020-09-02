@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!!!</title>
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <link rel="stylesheet" href="./icons/themify-icons.css" />
+    <style>
+      .greeting-text {
+        word-wrap: break-word;
+      }
+      .d-flex {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- sidebar -->
+    <aside></aside>
+
+    <!-- site content -->
+    <main>
+      <header class="navbar is-light">
+        <div class="navbar-brand">
+          <a href="./" class="navbar-item">
+            <img
+              src="./images/logo.svg"
+              height="40"
+              width="40"
+              alt="site logo"
+            />
+          </a>
+
+          <div class="navbar-burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="navbar-menu is-active">
+          <ul class="navbar-start">
+            <li class="navbar-item">
+              <input
+                type="text"
+                class="input is-info"
+                placeholder="Search this site..."
+              />
+            </li>
+          </ul>
+          <ul class="navbar-end">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link is-arrowless">
+                <span class="ti-shine"></span>
+                <span class="ml-2">Switch Theme</span>
+              </a>
+            </li>
+
+            <li class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"
+                ><span class="ti-user mr-3"></span> Account</a
+              >
+
+              <div class="navbar-dropdown">
+                <a href="./index.html" class="navbar-item">Dashboard</a>
+                <a href="./profile.html" class="navbar-item">Profile</a>
+                <a href="#" class="navbar-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container-fluid">
+        <section class="section">
+          <div class="columns">
+            <div class="column is-one-third">
+              <img src="./images/profile/user-profile.png" class="image" />
+
+              <div class="content mt-3"></div>
+            </div>
+            <div class="column">
+              <form>
+                <!-- row starts here -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">First Name</label>
+                      <input
+                        class="input is-success"
+                        value="Jayant"
+                        placeholder="Enter first name"
+                      />
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">Last Name</label>
+                      <input
+                        class="input is-success"
+                        value="Malik"
+                        placeholder="Enter last name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- row ends here -->
+
+                <div class="field">
+                  <div class="control">
+                    <label class="label">Email Address</label>
+                    <input
+                      type="email"
+                      class="input is-info"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+
+                <!-- row starts here -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">Current Password</label>
+                      <input
+                        type="password"
+                        class="input is-success"
+                        placeholder="Enter current password"
+                      />
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">New Password</label>
+                      <input
+                        type="password"
+                        class="input is-success"
+                        placeholder="Enter new password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- row ends here -->
+
+                <!-- row starts here -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">Notifications</label>
+                      <select class="select">
+                        <option value="1">Fully allowed</option>
+                        <option value="2">Only Important</option>
+                        <option value="3">Feature Updates</option>
+                        <option value="4">Blocked</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="label">Notification Channel</label>
+                      <select class="select">
+                        <option value="1">Email</option>
+                        <option value="2">Mobile</option>
+                        <option value="3">Mobile + Email</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- row ends here -->
+
+                <button class="button is-link is-fullwidth">
+                  Update Settings
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
